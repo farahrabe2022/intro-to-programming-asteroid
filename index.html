@@ -135,6 +135,43 @@
      -->
      <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script> -->
+    
+    <!-- Form to leave a message  -->
+    <section>
+        <h2> Leave a Message </h2>
+        <form id="leave_message" name = "leave_message">
+            <table>
+                <tr>
+                  <td><label for="id_name">Name: </label></td>
+                  <td><input type="text" id="id_name" name="name" required(true)></td>
+                </tr>
+                <tr>
+                  <td><label for="id_email">Email: </label></td>
+                  <td><input type="email" id="id_email" name="email" required(true)></td>
+                </tr>
+                <tr>
+                  <td><label for="id_message">Message: </label></td>
+                  <td><textarea id="id_message" name="message" required(true)></textarea></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td> <button type="submit" value="Submit">Submit</button></td>
+                </tr>
+              </table>
+
+        </form>
+        
+    </section>
+
+    <!-- List of messages  -->
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+
+    </section>
+
+
     <footer></footer>
     <script src="js/index.js"></script>
     </body>
