@@ -1,178 +1,238 @@
 <!DOCTYPE html>
+
 <html>
     <head>
-        <title>All about Me </title>
+        <title> Faratiana Rabenjamina </title>
         <meta charset="UTF-8">
-        <meta name="description" content="Learn to Code">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Faratiana Rabenjamina">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Portfolio website for Faratiana Rabenjamina "/>
+        <meta name="keywords" content="HTML, CSS, JavaScript, Faratiana Rabenjamina, Portfolio, Personal Website, Software Engineer"/>
+        <meta name="author" content="Faratiana Rabenjamina"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
         <!-- This gives the browser instructions on how to control the page's dimensions and scaling. -->
         <meta name="date" content="2022-04-02" scheme="YYYY-MM-DD">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <style>
-            body {
-                background-image: url(img/background_img1.jpg); 
-                background-color:burlywood;
-                background-repeat: no-repeat; 
-                background-size: cover; 
-                padding: 100px 100px; 
-                
-            }
-        </style>
+        <link rel="stylesheet" href="css/index.css" />  
     
     </head>
 
     <body>
-
+        <header>
+          <div class="container">
+            <nav class="nav">
+              <ul class="menu">
+                <li class="menu__item">
+                  <img
+                    class="image image--small image--rounded"
+                    src="img/Fara_CTD.jpg"
+                  />
+                </li>
+                <li class="menu__item">
+                  <a class="link link--no-color strong" href="/">Faratiana Rabenjamina</a>
+                </li>
+              </ul>
+    
+              <ul class="menu">
+                <li class="menu__item">
+                  <a class="link link--no-color" href="#about">About</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--no-color" href="#skills">Skills</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--no-color" href="#experience">Experience</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--no-color" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
         
-        <section>
-            <h1>Hey, My name is Faratiana </h1>
-            <img src="img/Fara_CTD.jpg" alt =" Faratiana Image" width="100" height ="100px">
-        </section>
-
         <!-- About -->
-        <section>
-            
-            <h2>About</h2> 
-            <p> Something about me </p>
-            <div>
-                <ul>
-                    <li>
-                        Full Stack Web Developer with 4 years experience using PHP/MySQL, Jelix Framework
-                    </li>
-                    <li>
-                        Coded with C++, Java, Javascript
-                    </li>
-                    <li>
-                        Used DataBase : MySQL, Oracle
-                    </li>
-                </ul>
-
-            </div>
+        <main>
+            <div class="container">
+                <section id="about">
                 
+                <h2>About</h2> 
+                <p> Something about me </p>
+                <div>
+                    <ul>
+                        <li>
+                            Full Stack Web Developer with 4 years experience using PHP/MySQL, Jelix Framework
+                        </li>
+                        <li>
+                            Coded with C++, Java, Javascript
+                        </li>
+                        <li>
+                            Used DataBase : MySQL, Oracle
+                        </li>
+                    </ul>
 
-        </section>
+                </div>
+                    
+
+            </section>
+            
+            
+            <!-- Skills -->
+            <section id="skills">
+                <h2>Skills</h2>
+      
+                <ul>
+                  <!-- HTML will be inserted here via JS -->
+                </ul>
+              </section>
+            
         
         <!-- Experience -->
-        <section>
+        <section id="experience">
             <h2>Experience</h2>
             <p> Some of my experiences </p>
             <div>
                 <ol>
-                    <li>
-                        2006-2008 : Sofware Engineer at IGE-XAO/ Seriante Madagascar
+                    <li class="card">
+                        <span>
+                            2006-2008 : <strong>Software Engineer</strong> at IGE-XAO/ Seriante Madagascar
+                        </span>
                     </li>
-                    <li>
-                        2008-2009 : Full Stack Web Developer at Seriante-Magadascar
+                    <li class="card">
+                        <span>
+                            2008-2009 : <strong>Full Stack Web Developer</strong> at Seriante-Magadascar
+                        </span>
+                        
                     </li>
-                    <li>
-                        2009-2010 : Software Engineer at AISSA / Bank of Africa
+                    <li class="card">
+                        <span>
+                            2009-2010 : <strong>Software Engineer</strong> at AISSA / Bank of Africa
                     </li>
-                    <li>
-                        2010-2016 : Nanny at private families in Metro Atlanta area, USA
+                        </span>
+                        
+                    <li class="card">
+                        <span>
+                            2010-2016 : <strong>Nanny</strong> at private families in Metro Atlanta area, USA
+                        </span>
+                        
                     </li>
-                    <li>
-                        2016-2020 : Staying-at-home mom
+                    <li class="card">
+                        <span>
+                            2016-2020 : <strong>Staying-at-home mom</strong>
+                        </span>
+                        
                     </li>
-                    <li>
-                        2020-Present : Part-time Team Member at CHICK-FIL-A, Atlanta USA
+                    <li class="card">
+                        <span>
+                            2020-Present : <strong>Part-time Team Member</strong> at CHICK-FIL-A, Atlanta USA
+                        </span>
+                        
                     </li>
-                    <li>
-                        2021-Present : Full time Shipping Clerk at ABBS, Atlanta USA
+                    <li class="card">
+                        <span>
+                            2021-Present : <strong>Full time Shipping Clerk</strong> at ABBS, Atlanta USA
+                        </span>
                     </li>
+
+                        
+                        
                 </ol>
 
             </div>
 
         </section>
 
-        <!-- Skills -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul></ul>
+                
+            
+           
+        <!-- Form to leave a message  -->
+        <section id="contact">
+            <h2>Leave a Message</h2>
+  
+            <form name="leave_message">
+              <div class="field field__inline">
+                <label class="field__label" for="lm_name">Name</label>
+                <input
+                  class="field__input"
+                  id="lm_name"
+                  type="text"
+                  name="name"
+                  required
+                />
+              </div>
+  
+              <div class="field field__inline">
+                <label class="field__label" for="lm_email">Email Address</label>
+                <input
+                  class="field__input"
+                  id="lm_email"
+                  type="email"
+                  name="email"
+                  required
+                />
+              </div>
+  
+              <div class="field">
+                <label class="field__label" for="lm_message">Message</label>
+                <textarea
+                  class="field__input"
+                  id="lm_message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+  
+              <button class="button" type="submit">Submit</button>
+            </form>
+          </section>
+  
+          <section id="messages" >
+            <h2>Messages</h2>
+  
+            <ul class="list" >
+              <!-- HTML will be inserted here via JS -->
+            </ul>
+            </div>
+        </main>
 
-        </section>
-        
-        <!-- Connect -->
-
-        <section>
-            <h2>Connect </h2>
-            <p> How can you connect with me ? </p>
-            <div>
-                <ul>
-                    <li>
-                        <i class="fa fa-envelope"></i>
-                        <a href ="mailto: farahrabenjam@yahoo.com, farahrabenjam@gmail.com ">Email</a>
+        <footer>
+            <div class="container">
+              <nav class="nav_footer">
+                <p id="copyright">
+                  <!-- HTML will be inserted here via JS -->
+                </p>
+      
+                <ul class="menu">
+                    
+                    <li class="menu__item">
+                        
+                        <a class="link link--no-color" href ="mailto: farahrabenjam@yahoo.com, farahrabenjam@gmail.com ">
+                            <i class="fa fa-envelope"></i>
+                        </a>
                     </li>
-                    <li>
-                        <i class="fa fa-github"></i>
-                        <a href ="https://github.com/farahrabe2022">GitHub</a>
+                    <li class="menu__item">
+                        
+                        <a class="link link--no-color" href ="https://github.com/farahrabe2022">
+                            <i class="fa fa-github"></i>
+                        </a>
                     </li>
             
-                    <li>
-                        <i class="fa fa-facebook-square"></i>
-                        <a href ="https://www.facebook.com/faratiaana/">Facebook</a>
+                    <li class="menu__item">
+                        
+                        <a class="link link--no-color" href ="https://www.facebook.com/faratiaana/">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
                     </li>
-                    <li>
-                        <i class="fa fa-linkedin"></i>
-                        <a href = "https://www.linkedin.com/in/faratiana-rabenjamina/">LinkedIn</a>
+                    <li class="menu__item">
+                        
+                        <a class="link link--no-color" href = "https://www.linkedin.com/in/faratiana-rabenjamina/">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
                     </li>
                 </ul>
-    
-
+              </nav>
             </div>
-            
-        </section>
-        
-        
-        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>           
-     -->
-     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script> -->
-    
-    <!-- Form to leave a message  -->
-    <section>
-        <h2> Leave a Message </h2>
-        <form id="leave_message" name = "leave_message">
-            <table>
-                <tr>
-                  <td><label for="id_name">Name: </label></td>
-                  <td><input type="text" id="id_name" name="name" required(true)></td>
-                </tr>
-                <tr>
-                  <td><label for="id_email">Email: </label></td>
-                  <td><input type="email" id="id_email" name="email" required(true)></td>
-                </tr>
-                <tr>
-                  <td><label for="id_message">Message: </label></td>
-                  <td><textarea id="id_message" name="message" required(true)></textarea></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td> <button type="submit" value="Submit">Submit</button></td>
-                </tr>
-              </table>
+        </footer>
 
-        </form>
-        
-    </section>
-
-    <!-- List of messages  -->
-
-    <section id="messages">
-        <h2>Messages</h2>
-        <ul></ul>
-
-    </section>
-
-
-    <footer></footer>
     <script src="js/index.js"></script>
     </body>
 </html>

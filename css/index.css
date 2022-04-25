@@ -1,0 +1,206 @@
+  body {
+    background-image: url(../img/background_img1.jpg); 
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  p:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+  
+ 
+  main {
+    flex-grow: 1;
+    
+  }
+  
+  footer {
+    background-color: #f7f5f9;
+    font-size: 1.125rem;
+  } 
+  
+  .container {
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 90vw;
+  }
+  
+  section {
+    padding: 1.5rem 0;
+  }
+  
+  .nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;  
+    
+  }
+
+
+  .nav_footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+    
+  }
+
+
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    list-style:none;
+  }
+  
+  .menu__item {
+    font-size: 1.125rem;
+  }
+  
+  .menu__item:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .link {
+    color: #0072e0;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .link--no-color {
+    color: inherit;
+  }
+  
+  .link:not(.link--no-decor):hover::after,
+  .link:not(.link--no-decor):focus::after {
+    border-bottom: 2px solid #0072e0;
+    content: '';
+    display: block;
+  }
+  
+  .link--no-color:hover::after,
+  .link--no-color:focus::after {
+    border-color: #2b2b4a;
+  }
+  
+  .image {
+    display: inline-block;
+  }
+  
+  .image--small {
+    width: 50px;
+  }
+  
+  .image--rounded {
+    border-radius: 999px;
+  }
+  
+  
+  .field {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .field--inline {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  
+  
+  
+  .field__label {
+    display:block;
+    color: #55556e;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .field__label,
+.field__input {
+  display: block;
+}
+  
+  .field__input {
+    padding: 0.25rem 0.5rem;
+    width: 50%;
+  }
+  
+  .button {
+    background-color: #0072e0;
+    border-radius: 3px;
+    color: #fff;
+    min-width: 100px;
+    padding: 0.5rem 1rem;
+  }
+  
+  
+  .list__item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .list__item :first-child {
+    flex-grow: 1;
+  }
+  
+  .list__item :not(:last-child) {
+    margin-right: 1rem;
+    border-bottom: 1px solid #55556e;
+  }
+ 
+ 
+  .tag {
+    border-radius: 3px;
+    border: 2px solid #0072e0;
+    color: #0072e0;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tag:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+
+
+  strong,
+.strong {
+  font-size: medium;
+  font-weight: bold;
+  
+}
+
+
+
+.card {
+  background-color: #f7f5f9;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 1rem;
+}
+  
