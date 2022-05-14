@@ -6,7 +6,7 @@
 
   body {
     background-image: url(../img/background_img1.jpg); 
-    background-color: burlywood;
+    /* background-color: burlywood; */
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
