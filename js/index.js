@@ -49,17 +49,17 @@ messageForm.addEventListener('submit', (event) => {
     //using “DOM Selection”, select the #messages section by id
     const messageSection = document.getElementById('messages');
 
+    
+
     //using “DOM Selection”, query the messageSection to find the <ul> element
     const messageList = messageSection.querySelector('ul');
 
     //create a new list item (li) element
     const newMessage = document.createElement('li');
 
-    //set the innerHTML of your newMessage with the following information:
-    //<a> element that displays the “name” and links to the “email” (hint: use the mailto: prefix)
-    //<span> element that displays the “message”
-
     
+
+    document.getElementById("messageList").removeAttribute("class");//show the Message header
     
     newMessage.innerHTML = `<a href=mailto: ${email.value} target='_blank'> ${name.value}</a> <span> wrote: ${textarea.value} </span>`;
 
@@ -77,10 +77,22 @@ messageForm.addEventListener('submit', (event) => {
       //find the button’s parent element using DOM Traversal
      const entry = event.target.parentNode
       //remove the entry element from the DOM
+
+      const list = entry.parentNode
+
+      // if there are no other messages, hide the section
+         if(list.children.length <= 1) {
+        messageSection.style.display = 'none'
+         }
     entry.remove();
+
+    
 
 })
     
+
+
+
     //append the removeButton to the newMessage element
     newMessage.appendChild(removeButton)
     //append the newMessage to the messageList element
@@ -88,4 +100,35 @@ messageForm.addEventListener('submit', (event) => {
 
     // //add a new line of code to clear the form
     messageForm.reset();
+
+    
+
+   
   });
+
+
+  //Add List of Public repositories retrieved from GitHub API via fetch 
+
+  fetch('https://api.github.com/users/farahrabe2022/repos')
+      .then((response) => response.json())
+      .then((data) => {
+        // filter out irrelevant repositories
+        const filteredData = data.filter((repo) =>
+          repo.name.includes('intro-to-programming')
+        )
+
+        const projectSection = document.querySelector('#projects')
+        const projectList = projectSection.querySelector('ul')
+
+        for (let repository of filteredData) {
+          const project = document.createElement('li')
+          project.innerHTML = `<a class="link link--no-decor" href="${repository.html_url}">${repository.name}</a>`
+          projectList.appendChild(project)
+        }
+      })
+      .catch(error=>console.log('Looks like there is an error',error))
+
+
+  
+  
+  

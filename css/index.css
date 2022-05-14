@@ -1,3 +1,9 @@
+  header {
+    padding-top : 20px;
+  padding-bottom:25px;
+  border-bottom : 10px solid orange
+  }
+
   body {
     background-image: url(../img/background_img1.jpg); 
     background-color: burlywood;
@@ -204,3 +210,8 @@
   margin-bottom: 1rem;
 }
   
+
+
+.hidden {
+  display: none;
+}
