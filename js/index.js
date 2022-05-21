@@ -75,24 +75,21 @@ messageForm.addEventListener('submit', (event) => {
     //add an event listener that handles the “click” event
     removeButton.addEventListener('click', (event) => {
       //find the button’s parent element using DOM Traversal
-     const entry = event.target.parentNode
+      const entry = event.target.parentNode
+        
       //remove the entry element from the DOM
-
       const list = entry.parentNode
 
-      // if there are no other messages, hide the section
-         if(list.children.length <= 1) {
-        messageSection.style.display = 'none'
-         }
-    entry.remove();
+        // if there are no other messages, hide the section
+          if(list.children.length <= 1) {
+          //messageSection.style.display = 'none'
+          document.getElementById("messageList").classList.add("hidden");
 
+          }
+          entry.remove();
+
+    })
     
-
-})
-    
-
-
-
     //append the removeButton to the newMessage element
     newMessage.appendChild(removeButton)
     //append the newMessage to the messageList element
