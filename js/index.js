@@ -56,21 +56,27 @@ messageForm.addEventListener('submit', (event) => {
 
     //create a new list item (li) element
     const newMessage = document.createElement('li');
+    
 
     
 
     document.getElementById("messageList").removeAttribute("class");//show the Message header
+
     
-    newMessage.innerHTML = `<a href=mailto: ${email.value} target='_blank'> ${name.value}</a> <span> wrote: ${textarea.value} </span>`;
+    // create new message
+    newMessage.classList.add('list__item') ;
+      newMessage.innerHTML = `<div>
+      <a href=mailto: ${email.value} target='_blank'> ${name.value}</a> wrote <span class ="strong" > ${textarea.value} </span></div>`;
 
 
     //create a new <button> element
     const removeButton = document.createElement('button') ;
     //set the inner text to “remove”
-    removeButton.innerText = 'remove' ;
+    removeButton.innerText = 'X' ;
 
     //set the type attribute to “button”
     removeButton.type = 'button' ;
+    removeButton.classList.add('button', 'button_remove');
 
     //add an event listener that handles the “click” event
     removeButton.addEventListener('click', (event) => {
@@ -89,6 +95,47 @@ messageForm.addEventListener('submit', (event) => {
           entry.remove();
 
     })
+
+
+    // EDIT 
+
+    // create edit button
+    const editButton = document.createElement('button')
+    editButton.innerText = 'Edit';
+    editButton.type = 'button'
+    editButton.classList.add('button','button_edit');
+
+    editButton.addEventListener('click', (event) => {
+      const button = event.target
+      const entry = button.parentNode
+
+      if (button.innerText === 'Edit') {
+        const message = entry.querySelector('span')
+        const input = document.createElement('input')
+        input.type = 'text'
+        input.value = message.innerText
+        input.classList.add('field__input')
+
+        message.after(input)
+        message.remove()
+
+        button.innerText = 'Save'
+      } else {
+        const input = entry.querySelector('input')
+        const message = document.createElement('span')
+        message.innerText = input.value
+        message.classList.add('strong')
+
+        input.after(message)
+        input.remove()
+
+        button.innerText = 'Edit';
+      }
+    })
+
+    newMessage.appendChild(editButton)
+
+    // END OF EDIT_CODE 
     
     //append the removeButton to the newMessage element
     newMessage.appendChild(removeButton)
