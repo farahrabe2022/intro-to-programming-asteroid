@@ -151,11 +151,22 @@
   .button {
     background-color: #0072e0;
     border-radius: 3px;
+    border-style :none;
     color: #fff;
     min-width: 100px;
     padding: 0.5rem 1rem;
   }
   
+  .button_remove {
+    background-color: red;
+    border-style: none;
+
+  }
+
+  .button_edit {
+    background-color: #f7f5f9;
+    color: #2b2b4a;
+  }
   
   .list__item {
     align-items: center;
@@ -170,7 +181,7 @@
   
   .list__item :not(:last-child) {
     margin-right: 1rem;
-    border-bottom: 1px solid #55556e;
+    /* border-bottom: 1px solid #55556e; */
   }
  
  
@@ -214,4 +225,25 @@
 
 .hidden {
   display: none;
+}
+
+.menu--hide-mobile {
+  display: none;
+}
+
+
+/* RESPONSIVE LAYOUTS */
+
+
+@media screen and (min-width: 768px) {
+  .menu--hide-mobile {
+    display: flex;
+  }
+
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  
 }
